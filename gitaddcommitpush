@@ -1,2 +1,2 @@
-!#/bin/bash
+#!/bin/bash
 ls . | git add . | git commit -m 'Minor Update on C, alx-low_level_programming' | git push
