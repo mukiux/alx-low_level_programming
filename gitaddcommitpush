@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Minor Update on C, alx-low_level_programming' | git push
+ls . | git add . | git commit -m 'Minor updates, Variables, if, else, while' | git push
