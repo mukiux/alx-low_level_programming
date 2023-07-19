@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Determine if a random number is positive, negative or zero.
-(*
+ * main - tests function that prints if integer is positive or negative
+ *
  * Return: 0 on success
  */
 int main(void)
