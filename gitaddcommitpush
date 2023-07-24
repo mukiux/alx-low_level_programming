@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Minor updates, 0x04-more_functions_nested_loops' | git push
+ls . | git add . | git commit -m 'Minor updates, 0x05-pointers_arrays_strings' | git push
