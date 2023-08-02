@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Minor updates, 0x07-pointers_arrays_strings' | git push
+ls . | git add . | git commit -m 'Minor updates, 0x08-recursion' | git push
