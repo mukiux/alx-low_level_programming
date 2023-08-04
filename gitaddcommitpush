@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Minor updates, 0x09-static_libraries' | git push
+ls . | git add . | git commit -m 'Minor updates, 0x0A-argc_argv' | git push
