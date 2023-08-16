@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Minor updates, 0x0E. C - Structures, typedef' | git push
+ls . | git add . | git commit -m 'Minor updatesv1, 0x0F-function_pointers' | git push
