@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Minor updatesv1, 0x0F-function_pointers' | git push
+ls . | git add . | git commit -m 'Minor updatesv1, 0x10-variadic_functions' | git push
