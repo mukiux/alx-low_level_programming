@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m '0x12-singly_linked_lists' | git push
+ls . | git add . | git commit -m '0x13-more_singly_linked_lists' | git push
