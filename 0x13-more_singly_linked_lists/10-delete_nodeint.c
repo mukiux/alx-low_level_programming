@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - Deletes the node at index index of a listint_t linked list.
+ * delete_nodeint_at_index - Deleting the node at index index of a listint_t linked list.
  * @head: Pointer to a pointer to the head of the linked list.
  * @index: Index of the node to be deleted (starting from 0).
  *
@@ -11,7 +11,7 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int count = 0;
+	unsigned int tala = 0;
 	listint_t *prev = NULL, *current = *head;
 
 	if (*head == NULL)
@@ -24,14 +24,14 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (1);
 	}
 
-	while (current != NULL && count < index)
+	while (current != NULL && tala < index)
 	{
 		prev = current;
 		current = current->next;
-		count++;
+		++tala;
 	}
 
-	if (count < index || current == NULL)
+	if (tala < index || current == NULL)
 		return (-1);
 
 	prev->next = current->next;
