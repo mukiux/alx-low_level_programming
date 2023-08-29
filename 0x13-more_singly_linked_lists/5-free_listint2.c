@@ -3,8 +3,9 @@
 #include "lists.h"
 
 /**
- * free_listint2 - Frees a listint_t list and sets the head to NULL.
+ * free_listint2 - Frees a lxistint_t list and sets the heada to NULL.
  * @head: Pointer to a pointer to the head of the linked list.
+ * Return: void as usual
  */
 void free_listint2(listint_t **head)
 {
