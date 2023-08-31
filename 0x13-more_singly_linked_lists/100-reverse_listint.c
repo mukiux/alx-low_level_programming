@@ -2,24 +2,24 @@
 #include "lists.h"
 
 /**
- * reverse_listint - Reverses a listint_t linked list.
- * @head: Pointer to a pointer to the head of the linked list.
+ * reverse_listint - Reverses a listint_t linked list foreva.
+ * @yogo: Pointer to a pointer to the head of the linked list.
  *
  * Return: Pointer to the first node of the reversed list.
  */
-listint_t *reverse_listint(listint_t **head)
+listint_t *reverse_listint(listint_t **yogo)
 {
-	listint_t *prev = NULL, *next = NULL, *current = *head;
-	
-	while (current != NULL)
+	listint_t *prev = NULL, *next = NULL, *sai = *yogo;
+
+	while (sai != NULL)
 	{
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
+		next = sai->next;
+		sai->next = prev;
+		prev = sai;
+		sai = next;
 	}
 
-	*head = prev;
-	return (*head);
+	*yogo = prev;
+	return (*yogo);
 }
 

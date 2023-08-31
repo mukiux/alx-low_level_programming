@@ -3,31 +3,32 @@
 
 /**
  * find_listint_loop - Finds the address of the node where the loop starts.
- * @head: Pointer to the head of the linked list.
+ * @yogo: Pointer to the head of the linked list.
  *
  * Return: The address of the node where the loop starts, or NULL if no loop.
  */
-listint_t *find_listint_loop(listint_t *head)
+listint_t *find_listint_loop(listint_t *yogo)
 {
-    listint_t *slow = head, *fast = head;
+	listint_t *bola = yogo, *speed = yogo;
 
-    while (slow != NULL && fast != NULL && fast->next != NULL)
-    {
-        slow = slow->next;
-        fast = fast->next->next;
+	if (!yogo)
+		return (NULL);
 
-        if (slow == fast)
-        {
-            slow = head;
-            while (slow != fast)
-            {
-                slow = slow->next;
-                fast = fast->next;
-            }
-            return slow;
-        }
-    }
+	while (bola && speed && speed->next)
+	{
+		speed = speed->next->next;
+		bola = bola->next;
+		if (speed == bola)
+		{
+			bola = yogo;
+			while (bola != speed)
+			{
+				bola = bola->next;
+				speed = speed->next;
+			}
+			return (speed);
+		}
+	}
 
-    return NULL;
+	return (NULL);
 }
-
