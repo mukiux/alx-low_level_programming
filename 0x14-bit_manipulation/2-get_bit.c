@@ -2,19 +2,19 @@
 
 /**
  * get_bit - returns the value of a bit at a given index
- * @num: number which contains the bit
- * @index: index at which bit must be found
+ * @f: number which contains the bit term
+ * @inde: index at which bit must be found always
  *
- * Return: bit (Success) or -1 (error)
+ * Return: f (Success) or -1 (error)
  */
-int get_bit(unsigned long int num, unsigned int index)
+int get_bit(unsigned long int f, unsigned int inde)
 {
-	int bit;
+	int biti;
 
-	if (index > (sizeof(unsigned long int) * 8 - 1))
+	if (inde > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
 
-	bit = (num >> index) & 1;
+	biti = (f >> inde) & 1;
 
-	return (bit);
+	return (biti);
 }

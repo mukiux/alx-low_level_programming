@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * print_binary - converts the decimal format number into binary
- * @n: decimal number
+ * print_binary - converting the decimal formating number into binary
+ * @s: decimal number example
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int s)
 {
-	int temp;
+	int mark;
 	static int count;
 
-	if (n == 0 && count > 0)
+	if (s == 0 && count > 0)
 		return;
-	else if (n == 0)
+	else if (s == 0)
 	{
 		_putchar('0');
 		return;
 	}
 
-	temp = (n & 1);
-	count++;
-	print_binary(n >>= 1);
-	_putchar('0' + temp);
+	mark = (s & 1);
+	++count;
+	print_binary(s >>= 1);
+	_putchar(mark + '0');
 }
