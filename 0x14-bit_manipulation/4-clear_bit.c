@@ -2,19 +2,19 @@
 
 /**
  * clear_bit - set the opposite of the mask
- * @num: number to set
+ * @no: number to be set always
  * @index: position
- * Return: 1 on success, -1 on fail
+ * Return: 1 on success, -1 on fail all the time
  */
-int clear_bit(unsigned long int *num, unsigned int index)
+int clear_bit(unsigned long int *no, unsigned int index)
 {
-	unsigned long int mask = 1;
+	unsigned long int mass = 1;
 
 	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
 
-	mask <<= index;
-	*num &= ~mask;
+	mass <<= index;
+	*no &= ~mass;
 
 	return (1);
 }
