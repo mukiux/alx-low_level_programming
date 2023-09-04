@@ -12,12 +12,12 @@ void err_fil(int fil_frm, int fil_to, char *argv[])
 {
 	if (fil_frm == -1)
 	{
-		dprintf(STDERR_FILENO, "Error Notice: Can not read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (fil_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error Notice: Can not write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 }
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "%s\n", "Command Usage: cp fil_frm fil_to");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp fil_frm fil_to");
 		exit(97);
 	}
 
@@ -58,14 +58,14 @@ int main(int argc, char *argv[])
 	err_closn = close(fil_frm);
 	if (err_closn == -1)
 	{
-		dprintf(STDERR_FILENO, "Error Notice: Can not close fd %d\n", fil_frm);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fil_frm);
 		exit(100);
 	}
 
 	err_closn = close(fil_to);
 	if (err_closn == -1)
 	{
-		dprintf(STDERR_FILENO, "Error Notice: Can not close fd %d\n", fil_frm);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fil_frm);
 		exit(100);
 	}
 	return (0);
