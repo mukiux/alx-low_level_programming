@@ -1,17 +1,15 @@
 #include "lists.h"
 #include <stdio.h>
-
 /**
- * print_listint - prints all the elements of a listint_t list.
+ * print_listint - function with one argument
+ * @h: pointer to struct
  *
- * @h: head of linklist node
- *
- * Return: the number of nodes
- *
+ * Description: prints all the elements of a list
+ * Return: number of nodes
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;
+	int count = 0;
 
 	while (h != NULL)
 	{
@@ -21,4 +19,3 @@ size_t print_listint(const listint_t *h)
 	}
 	return (count);
 }
-
