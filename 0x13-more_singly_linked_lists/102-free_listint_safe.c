@@ -10,21 +10,21 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-    size_t count = 0;
-    listint_t *current = *h, *temp;
+	size_t count = 0;
+	listint_t *current = *h, *temp;
 
-    while (current != NULL)
-    {
-        count++;
-        temp = current;
-        current = current->next;
-        free(temp);
+	while (current != NULL)
+	{
+		count++;
+		temp = current;
+		current = current->next;
+		free(temp);
 
-        if (temp < current)
-            break;
-    }
+	if (temp < current)
+	break;
+	}
 
-    *h = NULL;
-    return count;
+	*h = NULL;
+	return (count);
 }
 
