@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m 'Updated-0x15-file_io' | git push
+ls . | git add . | git commit -m '0x14. C - Bit manipulation redo' | git push
