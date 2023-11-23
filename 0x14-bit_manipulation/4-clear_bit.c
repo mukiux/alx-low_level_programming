@@ -18,3 +18,4 @@ int clear_bit(unsigned long int *no, unsigned int index)
 
 	return (1);
 }
+

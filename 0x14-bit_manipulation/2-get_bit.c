@@ -18,3 +18,4 @@ int get_bit(unsigned long int f, unsigned int inde)
 
 	return (biti);
 }
+

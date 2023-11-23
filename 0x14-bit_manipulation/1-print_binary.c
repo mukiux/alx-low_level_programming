@@ -22,3 +22,4 @@ void print_binary(unsigned long int s)
 	print_binary(s >>= 1);
 	_putchar(mark + '0');
 }
+

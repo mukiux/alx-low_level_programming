@@ -45,3 +45,4 @@ unsigned int get_length(unsigned long int num)
 		num >>= 1;
 	return (count);
 }
+

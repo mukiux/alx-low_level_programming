@@ -25,3 +25,4 @@ unsigned int binary_to_uint(const char *k)
 
 	return (deci);
 }
+

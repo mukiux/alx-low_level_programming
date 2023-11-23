@@ -21,3 +21,4 @@ int set_bit(unsigned long int *num, unsigned int index)
 	*num = *num | mask;
 	return (1);
 }
+
