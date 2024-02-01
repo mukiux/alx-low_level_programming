@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m '0x15-file_io redo' | git push
+ls . | git add . | git commit -m '0x1A-hash_tables' | git push
