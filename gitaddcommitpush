@@ -1,2 +1,2 @@
 #!/bin/bash
-ls . | git add . | git commit -m '0x1A-hash_tables' | git push
+ls . | git add . | git commit -m '0x1C-makefiles' | git push
